@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: sans-serif;
+}
+
+/* 
+html {
+  font-size: 62.5%;
+} */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #008000;
+    /* background-image: url("photo1.jpeg"); */
+}
+
+.voting {
+    background: #fff;
+    border-radius: 20px;
+    max-width: 380px;
+    width: 100%;
+    padding: 25px;
+}
+
+.voting header {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.voting h4 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.voting .voting-area {
+    margin: 20px 0 15px 0;
+
+}
+
+.voting-area label {
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 2px solid #eee;
+    transition: all .2s ease;
+}
+
+/* js selector begins */
+label .selected {
+    border-color: #6665ee;
+}
+
+/* js selector ends */
+
+label .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+label .row .colum {
+    display: flex;
+    align-items: center;
+}
+
+label .colum {
+    display: flex;
+    align-items: center;
+}
+
+label .row .circle {
+    height: 19px;
+    width: 19px;
+    position: relative;
+    display: block;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+
+}
+
+/* js selector begins */
+label .selected .row .circle {
+    border-color: #6665ee;
+}
+
+/* js selector ends */
+.row .circle::after {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background: #ccc;
+    top: 2px;
+    left: 2px;
+    border-radius: inherit;
+    display: none;
+}
+
+/* js selector begins */
+label .selected .row .circle::after {
+    display: block;
+    background: #6665ee ! important;
+}
+
+/* js selector ends */
+label:hover .row .circle::after {
+    display: block;
+    background: #e6e6e6;
+}
+
+label .row span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+label .row .percent {
+    display: none;
+}
+
+label .progress {
+    height: 7px;
+    width: 100%;
+    position: relative;
+    margin: 8px 0 3px 0;
+    background: #f0f0f0;
+    border-radius: 30px;
+    display: none;
+}
+
+label .progress::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(1% * var(--w));
+    background: #ccc;
+    border-radius: inherit;
+}
+
+label .selected .progress::after {
+    background: #6665ee;
+}
+
+label .selectall :is(.percent, .progress) {
+    display: block;
+}
+
+
+/* .row , */
+/* label .selected .progress */
+
+.formField {
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 2px solid #eee;
+    transition: all .2s ease;
+}
+
+.formField input {
+    margin-right: 15px;
+}
+.voteBtn {
+    width: 100%;
+    background:#008000;
+    border: green;
+    height: 30px;
+    color: white;
+}

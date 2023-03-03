@@ -1,0 +1,285 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: sans-serif;
+    
+}
+
+body {
+    background-color: #86c2e9;
+}
+#headerSection{
+    padding: 10px;
+
+}
+#headerSection h1{
+    font-family: 'Times New Roman', Times, serif;
+}
+input{
+    padding: 10px;
+    border-radius: 5px; 
+}
+#rolebox{
+    padding: 10px;
+    border-radius: 5px;
+    width: 14%;
+}
+#loginbtn{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+}
+#Loginbtn{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    float: left;
+    
+}
+#backbtn{
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    float: right;
+}
+#Profile{
+    background-color: #fff;
+    width: 30%;
+    padding: 20px;
+    float: left;
+}
+#Group{
+    background-color: #fff;
+    width: 60%;
+    padding: 20px;
+    float: right;
+}
+#votebtn{
+    padding: 5px;
+    font-size: 15px;
+    background-color: #3498db;
+    color: #fff;
+    border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: sans-serif;
+}
+
+
+.voting {
+    background-color: inheriT;
+    border-radius: 20px;
+    width: 380px;
+    max-width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.voting header {
+    font-size: 25px;
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.voting h4 {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.voting .voting-area {
+    margin: 20px 0 15px 0;
+
+}
+
+.voting-area label {
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 2px solid #eee;
+    transition: all .2s ease;
+}
+
+/* js selector begins */
+label .selected {
+    border-color: #6665ee;
+}
+
+/* js selector ends */
+
+label .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+label .row .colum {
+    display: flex;
+    align-items: center;
+}
+
+label .colum {
+    display: flex;
+    align-items: center;
+}
+
+label .row .circle {
+    height: 19px;
+    width: 19px;
+    position: relative;
+    display: block;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+
+}
+
+/* js selector begins */
+label .selected .row .circle {
+    border-color: #6665ee;
+}
+
+/* js selector ends */
+.row .circle::after {
+    content: "";
+    position: absolute;
+    height: 11px;
+    width: 11px;
+    background: #ccc;
+    top: 2px;
+    left: 2px;
+    border-radius: inherit;
+    display: none;
+}
+
+/* js selector begins */
+label .selected .row .circle::after {
+    display: block;
+    background: #6665ee ! important;
+}
+
+/* js selector ends */
+label:hover .row .circle::after {
+    display: block;
+    background: #e6e6e6;
+}
+
+label .row span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+label .row .percent {
+    display: none;
+}
+
+label .progress {
+    height: 7px;
+    width: 100%;
+    position: relative;
+    margin: 8px 0 3px 0;
+    background: #f0f0f0;
+    border-radius: 30px;
+    display: none;
+}
+
+label .progress::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(1% * var(--w));
+    background: #ccc;
+    border-radius: inherit;
+}
+
+label .selected .progress::after {
+    background: #6665ee;
+}
+
+label .selectall :is(.percent, .progress) {
+    display: block;
+}
+
+
+/* .row , */
+/* label .selected .progress */
+
+.formField {
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 8px 15px;
+    border: 2px solid #eee;
+    transition: all .2s ease;
+}
+
+.formField input {
+    margin-right: 15px;
+}
+.voteBtn {
+    width: 100%;
+    background:#333;
+    height: 30px;
+    color: white;
+}
+
+/* Style the navbar */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  overflow: hidden;
+  background-color: #c6c6c6;
+}
+
+/* Navbar links */
+#navbar a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  width: 100%;
+  max-width: 200px;
+}
+
+#navbar p {
+    width: 100%;
+     padding: 14px;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+.vote-title{
+    text-decoration: none;
+    color: #333;
+}
